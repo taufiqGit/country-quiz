@@ -1,0 +1,58 @@
+.itemAnswer {
+    margin-top: 20px;
+}
+
+.btnAnswer {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .2s linear;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.btnDefault {
+    background-color: white;
+    border: 2px solid rgba(96, 102, 208, 0.7);
+}
+.btnTrue {
+    background-color: #60BF88;
+    border: 2px solid #60BF88;
+}
+.btnFalse {
+    background-color: #EA8282;
+    border: 2px solid #EA8282;
+}
+.btnTrue::after{
+    content: url('../../../images/true.svg');
+    position: absolute;
+    right: 12px;
+}
+.btnFalse::after{
+    content: url('../../../images/false.svg');
+    position: absolute;
+    right: 12px;
+}
+.abcd {
+    font-size: 22px;
+    font-weight: 600;
+}
+.abcdDefault {
+    color: rgba(96, 102, 208, 0.8);   
+}
+.abcdTxtWhite {
+    color: #ffffff;
+}
+
+.textAnswer {
+    margin-left: 22px;
+    font-size: 18px;
+}
+.textAnswerDefault {
+    color: rgba(96, 102, 208, 0.8);
+}
+.textWhiteAnswer {
+    color: #ffffff;
+}

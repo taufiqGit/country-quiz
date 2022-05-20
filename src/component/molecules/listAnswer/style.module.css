@@ -1,0 +1,44 @@
+.wrapAnswer {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.itemAnswer {
+    margin-top: 18px;
+}
+
+.btnAnswer {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 12px;
+    background-color: white;
+    border: 2px solid rgba(96, 102, 208, 0.7);
+    cursor: pointer;
+    transition: all .2s linear;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btnAnswer:hover {
+    background-color: #F9A826;
+    border: 2px solid #F9A826;
+}
+
+.abcd {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(96, 102, 208, 0.8);
+}
+
+.textAnswer {
+    margin-left: 22px;
+    font-size: 18px;
+    color: rgba(96, 102, 208, 0.8);
+}
+
+.btnAnswer:hover > .abcd {
+    color: white;
+}
+.btnAnswer:hover > .textAnswer {
+    color: white;
+}

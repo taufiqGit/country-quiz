@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  min-height: 100vh; 
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/background.png');
+  background-size: cover;
+}
+
+.footer {
+  position: absolute;
+  bottom: 8px;
+  font-size: 14px;
+  color: white;
+}
+.footer a{
+  text-decoration: none;
+  color: lightblue;
+  font-weight: 600;
+}

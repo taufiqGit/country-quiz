@@ -1,0 +1,72 @@
+
+.wrapCardQuiz {
+    width: auto;
+    height: auto;
+}
+
+.cardQuiz {
+    width: 420px;
+    height: auto;
+    padding: 22px;
+    margin-top: 10px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.titleCardQuiz {
+    font-size: 34px;
+    font-weight: 700;
+    color: #F2F2F2;
+}
+
+.questions {
+    margin-top: 50px;
+    color: #2F527B;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.imgFlag {
+    width: 120px;
+    margin-top: 18px;
+    border-radius: 6px;
+}
+
+.adventureImg {
+    position: absolute;
+    right: 0;
+    top: -60px;
+}
+
+.wrapBtnNext {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.btnNext {
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: #F9A826;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+@media screen and (max-width: 450px){
+    .cardQuiz {
+        width: 355px;
+    }
+    .titleCardQuiz {
+        font-size: 26px;
+    }
+    .adventureImg {
+        width: 130px;
+    }
+    .questions {
+        margin-top: 35px;
+    }
+}

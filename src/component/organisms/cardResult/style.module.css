@@ -1,0 +1,63 @@
+
+.wrapCardResult {
+    width: auto;
+}
+
+.titleCardResult {
+    font-size: 34px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.cardResult {
+    width: 420px;
+    height: auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgCongrat {
+    width: 240px;
+}
+
+.textCard1 {
+    margin-top: 55px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #1D355D;
+}
+
+.textCard2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D355D;
+}
+.textCard2 span{
+    font-size: 26px;
+    font-weight: 700;
+    color: lightgreen;
+}
+.btnCardResult {
+    margin-top: 55px;
+    border: 2px solid #1D355D;
+    color: #1D355D;
+    background: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px 58px;
+}
+
+@media screen and (max-width: 450px){
+    .cardResult {
+        width: 355px;
+    }
+    .titleCardResult {
+        font-size: 26px;
+    }
+}
