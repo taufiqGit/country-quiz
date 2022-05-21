@@ -14,7 +14,6 @@ function App() {
 
   const getInitCoutry = useCallback(async ()=>{
     dispatch(GetInitCountries())
-    //console.log('iooo');
   }, [GetInitCountries])
 
   useEffect(()=>{

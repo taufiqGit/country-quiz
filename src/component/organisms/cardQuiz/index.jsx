@@ -17,14 +17,11 @@ export default function CardQuiz() {
     }
 
     const handleNext =()=>{
-        console.log(conditionAnswerUser);
         if (conditionAnswerUser) {
             dispatch(CreateQuestion(listCountries))
             dispatch(SetPositionQuestion('answer'))
-            console.log('kontol'); 
         } else {
             dispatch(SetPositionQuestion('try again'))
-            console.log('memek');
         }
     }
     

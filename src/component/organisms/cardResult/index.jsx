@@ -13,7 +13,6 @@ export default function CardResult() {
         dispatch(CreateQuestion(listCountries))
         dispatch(SetPositionQuestion('answer'))
         dispatch(SetTryAgain())
-        console.log('osama');
     }
     
     return (

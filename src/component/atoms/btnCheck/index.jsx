@@ -33,7 +33,7 @@ export default function BtnCheck(props) {
             classTxtCoutry = `${style.textAnswerDefault}`
         }
     }
-    //console.log(asd);
+    
     return (
         <li className={style.itemAnswer}>
             <button className={`${style.btnAnswer} ${classBtn}`}>
