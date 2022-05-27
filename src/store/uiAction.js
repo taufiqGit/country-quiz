@@ -17,15 +17,3 @@ export function CheckAnswer(answerTrue, answerFromUser){
         }       
     }
 }
-
-export function SetPositionQuestion(val) {
-    return (dispatch)=> {
-        dispatch(UIAction.setPosition(val))
-    }
-}
-
-export function SetTryAgain() {
-    return (dispatch)=>{
-        dispatch(UIAction.tryAgain())
-    }
-}

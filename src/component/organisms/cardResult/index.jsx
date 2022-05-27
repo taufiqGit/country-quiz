@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { CreateQuestion } from '../../../store/questionAction'
-import { SetPositionQuestion, SetTryAgain } from '../../../store/uiAction'
+import { UIAction } from '../../../store/uiSlice'
 import congratIcon from '../../../images/undraw_winners_ao2o.svg'
 import style from './style.module.css'
 
@@ -11,8 +11,8 @@ export default function CardResult() {
 
     const handleTryAgain =()=>{
         dispatch(CreateQuestion(listCountries))
-        dispatch(SetPositionQuestion('answer'))
-        dispatch(SetTryAgain())
+        dispatch(UIAction.setPosition('answer'))
+        dispatch(UIAction.tryAgain())
     }
     
     return (

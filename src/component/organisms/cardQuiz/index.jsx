@@ -3,9 +3,10 @@ import adventureImg from '../../../images/undraw_adventure_4hum.svg'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react';
 import { CreateQuestion } from '../../../store/questionAction';
-import { CheckAnswer, SetPositionQuestion } from '../../../store/uiAction';
+import { CheckAnswer } from '../../../store/uiAction';
 import ListAnswer from '../../molecules/listAnswer';
 import ListAnswerCheck from '../../molecules/listAnswerCheck';
+import { UIAction } from '../../../store/uiSlice';
 
 export default function CardQuiz() {
     const { multipleChoice, listCountries, question, answerTrue, flag } = useSelector(state => state.question)
@@ -19,9 +20,9 @@ export default function CardQuiz() {
     const handleNext =()=>{
         if (conditionAnswerUser) {
             dispatch(CreateQuestion(listCountries))
-            dispatch(SetPositionQuestion('answer'))
+            dispatch(UIAction.setPosition('answer'))
         } else {
-            dispatch(SetPositionQuestion('try again'))
+            dispatch(UIAction.setPosition('try again'))
         }
     }
     
